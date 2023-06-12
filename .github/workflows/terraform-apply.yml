@@ -10,7 +10,7 @@ env:
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
   TF_WORKSPACE: "learn-terraform-github-actions"
   CONFIG_DIRECTORY: "./"
-#  the configuration defines a terraform job, and grants the workflow permission to read the repository contents.
+
 jobs:
   terraform:
     if: github.repository != 'hashicorp-education/learn-terraform-github-actions'
